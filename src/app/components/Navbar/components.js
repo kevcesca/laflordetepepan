@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export const Logo = () => <div className={logoLayout.logo_container}>
     <Image
-        src="logoflor.png"
-        sizes="30vw"
+        src="logocafeteria3.png"
+        sizes="60vw"
         style={{
             width: '100%',
             height: 'auto',

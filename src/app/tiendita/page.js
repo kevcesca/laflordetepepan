@@ -4,7 +4,7 @@ import styles from './menu.module.css'
 export default function Home() {
     return (
         <main className={styles.main}>
-            <h1>Menú</h1>
+            <h1>Tienda</h1>
             <Image
                 className=''
                 sizes="100vw"

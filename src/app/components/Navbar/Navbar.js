@@ -19,7 +19,9 @@ const Navbar = () => {
             <div id='nav' className={`${styles.nav_container} ${styles.nav_responsive}`}>
 
                 <nav className={styles.nav}>
-                    <Logo/>
+                    <Link href="/" scroll={false}>
+                        <Logo/>
+                    </Link>
                     <ul className={styles.nav_items}>
                         {links.map(({ label, route }) =>
                             <Link href={route} scroll={false} key={route}>

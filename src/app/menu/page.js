@@ -7,6 +7,11 @@ export default function Home() {
             <h1>Menú</h1>
             <Image
                 className=''
+                sizes="30vw"
+                style={{
+                    width: '100%',
+                    height: 'auto',
+                }}
                 width={707}
                 height={1000}
                 src="menu.jpg"

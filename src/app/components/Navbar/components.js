@@ -2,10 +2,11 @@ import logoLayout from './Navbar.module.css'
 import Image from "next/image";
 
 
-export const Logo = () => <div className={logoLayout.logo_container}>
+export const Logo = () => 
+<div className={logoLayout.logo_container}>
     <Image
         src="logocafeteria3.png"
-        sizes="60vw"
+        sizes="55rem"
         style={{
             width: '100%',
             height: 'auto',

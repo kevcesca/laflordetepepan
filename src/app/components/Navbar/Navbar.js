@@ -10,6 +10,9 @@ const links = [{
 }, {
     label: "Menu",
     route: "/menu"
+},{
+    label: "Tiendita",
+    route: "tiendita"
 }]
 
 const Navbar = () => {

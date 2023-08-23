@@ -1,23 +1,77 @@
+'use client'
 import Image from 'next/image'
+import { Container, Grid, Card, CardMedia, makeStyles } from '@mui/material';
 import styles from './menu.module.css'
+import ProductList from '../components/cards/Cards';
 
-export default function Home() {
+const products = [
+    {
+        id: 1,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 2,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 3,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 4,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 5,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 6,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 7,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+    {
+        id: 8,
+        name: "Chapata de jamón con queso",
+        description: "Chapata de jamón con queso y verduras",
+        price: 45.00,
+        imageUrl: "/fotos/chapata.jpg",
+    },
+];
+
+
+function App() {
     return (
+
         <main className={styles.main}>
-            <h1>Tienda</h1>
-            <Image
-                className=''
-                sizes="100vw"
-                style={{
-                    width: '100%',
-                    height: 'auto',
-                }}
-                width={707}
-                height={1000}
-                src="menu.jpg"
-                alt="La Flor de Tepepan"
-                priority
-            />
+            <ProductList products={products}></ProductList>
         </main>
-    )
+
+    );
 }
+
+export default App;

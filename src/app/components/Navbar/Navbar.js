@@ -13,6 +13,9 @@ const links = [{
 },{
     label: "Tiendita",
     route: "tiendita"
+},{
+    label: "Cafetería",
+    route: "cafeteria"
 }]
 
 const Navbar = () => {

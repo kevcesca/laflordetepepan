@@ -1,10 +1,24 @@
+"use client"
 import Image from 'next/image'
 import styles from './page.module.css'
 import Link from 'next/link'
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
+import React, { useState } from 'react';
 
 export default function Home() {
+  const [hovered, setHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setHovered(false);
+  };
+
+
+
   return (
     <main className={styles.main}>
       <Box>
@@ -20,7 +34,7 @@ export default function Home() {
                   width: '100%',
                   height: 'auto',
                 }}
-                className=''
+                className='logos'
                 width={250}
                 height={250}
                 src="logoflorpiedras3.png"
@@ -29,17 +43,22 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="/" scroll={false}>
+            <Link 
+              href="/" 
+              scroll={false}
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
+            >
               <Image
                 sizes="80vw"
                 style={{
                   width: '100%',
                   height: 'auto',
                 }}
-                className=''
-                width={250}
-                height={250}
-                src="logocafeteriafinal.png"
+                className='logos'
+                width={255}
+                height={255}
+                src={hovered ? 'productosmex.png' : 'logocafeteriafinal.png' }
                 alt="La Flor de Tepepan Cafeteria"
                 priority
               />
@@ -52,7 +71,7 @@ export default function Home() {
                   width: '100%',
                   height: 'auto',
                 }}
-                className=''
+                className='logos'
                 width={250}
                 height={250}
                 src="logocafecoatepec.png"
@@ -61,17 +80,20 @@ export default function Home() {
               />
             </Link>
 
-            <Link href="/" scroll={false}>
+            <Link 
+              href="/" 
+              scroll={false} 
+            >
               <Image
                 sizes="80vw"
                 style={{
                   width: '100%',
                   height: 'auto',
                 }}
-                className=''
+                className='logos'
                 width={250}
                 height={250}
-                src="logocafeteria.png"
+                src={'logocafeteria.png'}
                 alt="La Flor de Tepepan"
                 priority
               />

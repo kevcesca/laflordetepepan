@@ -1,10 +1,11 @@
-import { Card, CardContent, Typography, Grid } from '@mui/material';
+import { Card, CardContent, Typography, Grid, Button } from '@mui/material';
 import Image from 'next/image';
+import ComboBox from '../forms/forms';
 import styles from "./cards.module.css"
 
 
-
 const ProductCard = ({ product }) => {
+
     return (
         <Card className="">
             <Image
@@ -20,16 +21,23 @@ const ProductCard = ({ product }) => {
                 alt={product.name}
                 priority
             />
-            <CardContent className={styles.CardContent}>
-                <Typography gutterBottom variant="h6" component="h2">
-                    {product.name}
-                </Typography>
-                <Typography variant="body2" color="textSecondary" component="p">
-                    {product.description}
-                </Typography>
-                <Typography variant="h6" color="primary">
-                    ${product.price}
-                </Typography>
+            <CardContent >
+                <div className={styles.CardContent}>
+                    <Typography gutterBottom variant="h6" component="h2">
+                        {product.name}
+                    </Typography>
+                    <Typography variant="body2" color="textSecondary" component="p">
+                        {product.description}
+                    </Typography>
+                    <div className={styles.agregarCantidad}>
+                        <ComboBox id={product.id + "combo"} />
+                        <Button className={styles.button} variant="outlined">Agregar</Button>
+                    </div>
+                    <Typography variant="h6" color="primary">
+                        ${product.price}
+                    </Typography>
+                </div>
+
             </CardContent>
         </Card>
     );

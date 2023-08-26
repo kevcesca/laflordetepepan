@@ -16,6 +16,9 @@ const links = [{
 },{
     label: "Cafetería",
     route: "cafeteria"
+},{
+    label: "Login",
+    route: "login"
 }]
 
 const Navbar = () => {

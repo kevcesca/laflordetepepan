@@ -1,12 +1,15 @@
+"use client"
 import './globals.css'
 import { Inter } from 'next/font/google'
-import Link from 'next/link'
 import Navbar from './components/Navbar/Navbar'
+import Footer from './components/footer/footer';
+
+
 
 const links = [{
-    label: "Home",
-    route: "/"
-},{
+  label: "Home",
+  route: "/"
+}, {
   label: "Menu",
   route: "/menu"
 }]
@@ -23,9 +26,10 @@ export default function RootLayout({ children }) {
     <html lang="es">
       <body className={inter.className}>
           <header>
-            <Navbar/>
+            <Navbar />
           </header>
           {children}
+          <Footer/>
       </body>
     </html>
   )

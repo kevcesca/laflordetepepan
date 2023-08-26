@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { Container, Grid, Card, CardMedia, makeStyles } from '@mui/material';
 import styles from './menu.module.css'
 import ProductList from '../components/cards/Cards';
+import OrderForm from '../components/formularioPedidos/formulario';
 
 const products = [
     {
@@ -69,6 +70,8 @@ function App() {
 
         <main className={styles.main}>
             <ProductList products={products}></ProductList>
+
+            <OrderForm />
         </main>
 
     );

@@ -1,0 +1,19 @@
+.CardContent{
+    min-height: 35vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.agregarCantidad{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.button{
+    width: 7vw;
+    margin-left: 1vw;
+}

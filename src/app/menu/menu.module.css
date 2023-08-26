@@ -5,4 +5,23 @@
     align-items: center;
     padding: 6rem;
     min-height: 100vh;
+    background: url("https://res.cloudinary.com/dz1edfmjp/image/upload/v1693004073/pagina/fondos/cafeteria.png") no-repeat center;
+    z-index: 1000;
+    min-height: 100vh;
+    background-size: cover;
+}
+
+.font{
+    color:white;
+    white-space: nowrap;
+    text-align: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+}
+
+.menuContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
